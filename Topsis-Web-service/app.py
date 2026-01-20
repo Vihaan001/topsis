@@ -17,8 +17,8 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # --- CONFIGURATION (CHANGE THESE) ---
-SENDER_EMAIL = "dpsvih12036@gmail.com"  # <--- REPLACE THIS
-SENDER_PASSWORD = "xhzf bedl ojlz ycmi"  # <--- REPLACE THIS (Not your login password)
+SENDER_EMAIL = ""  # <--- REPLACE THIS
+SENDER_PASSWORD = ""  # <--- REPLACE THIS (Not your login password)
 
 def validate_email(email):
     regex = r'^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
@@ -153,4 +153,5 @@ def index():
     return render_template('form.html')
 
 if __name__ == '__main__':
+
     app.run(debug=True)
