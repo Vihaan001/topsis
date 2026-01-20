@@ -46,7 +46,23 @@ topsis <InputDataFile> <Weights> <Impacts> <OutputResultFileName>
 Example:
 topsis data.csv "1,1,1,1,1" "+,-,+,+,+" result.csv
 
-## 4. Usage: Web Service (Flask)
+---
+
+## 4. Live Web Service
+
+The web application is deployed and live! You can access it to perform TOPSIS analysis without writing any code.
+
+🔗 **Live Demo:** [https://yourusername.pythonanywhere.com](https://yourusername.pythonanywhere.com)
+*(Replace `yourusername` with your actual PythonAnywhere username)*
+
+### Features
+* **Easy Upload:** Drag and drop your `.csv` files.
+* **Email Results:** The processed rankings are sent directly to your inbox.
+* **Input Validation:** Automatically checks for correct data types and formats.
+
+---
+
+## 5. Usage: Local Web Service (Flask)
 A web interface allows users to upload their CSV files and receive results via email.
 
 ### Setup
@@ -58,8 +74,3 @@ pip install -r ../requirements.txt
 ### Run the application:
 python app.py
 Open your browser at http://127.0.0.1:5000/.
-
-### Features
-1. Secure File Upload: Accepts .csv files.
-2. Input Validation: Checks for numeric data and correct format.
-3. Email Integration: Automatically mails the result.csv to the user.
